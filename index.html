@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Khushraj Sinha</title>
+    <link rel="icon" type="image/x-icon" href="/logo/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/468eb04cb2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo/logo.png" class="logo" />
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <spam style="color: yellow">Home</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam style="color: yellow">About</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam style="color: yellow">Services</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam style="color: yellow">Portfolio</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">
+                            <spam style="color: yellow">Contact</spam>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="sasta">
+                <h1 id="myname" style="color: aliceblue">
+                    <br /> Hi, I'm <br /><span id="spanblok" style="color: blueviolet">Khushraj <br />
+              Sinha</span
+            >
+          </h1>
+          <div id="hero2">
+            <img src="images/backgroundimg.png" alt="" id="sastaphoto" />
+          </div>
+        </div>
+        <div class="header-test">
+          <p>Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------about----------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/edit.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Khushraj Sinha student of Uttarakhand Technical University.
+              Currently I am in B.Tech (CSE). Myskills includes- Java | Python |
+              C/C++ | HTML | CSS | Javascript.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />HTML,CSS,Javascript</li>
+                    <li><span>Programming Language</span><br />C++,Java,Python</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <span>2023</span><br />Web Development Internship at CHARGE Edu-Tech
+                    </li>
+                    <li>
+                        <span>2022</span><br />Web Development Internship at The Spark Foundation
+                    </li>
+                    <li>
+                        <span>2022</span><br />Java Internship at Oasis Infobyte
+                    </li>
+                    <li><span>2022</span><br />Python Training at Google</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span>2020 - Current</span><br />B.Tech from Shivalik College of Engineering
+                    </li>
+                    <li>
+                        <span>2019 - 2020</span><br />12th from St.Joseph Public School
+                    </li>
+                    <li><span>2019</span><br />10th from D.A.V Public School</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!------------------services----------------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        <spam style="color: darkkhaki">Web Development </spam>
+                    </h2>
+                    <p>
+                        <spam style="color: aqua">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web
+                            applications, electronic businesses, and social network services</spam>
+                    </p>
+                    <a href="#">learn mores</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>
+                        <spam style="color: darkkhaki">C++ Programming Language</spam>
+                    </h2>
+                    <p>
+                        <spam style="color: aqua">C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs. C++ is portable and can be used to develop applications that can be adapted to multiple
+                            platforms. C++ is fun and easy to learn!</spam>
+                    </p>
+                    <a href="#">learn mores</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>
+                        <spam style="color: darkkhaki">Java Programming</spam>
+                    </h2>
+                    <p>
+                        <spam style="color: aqua">Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software
+                            to big data applications and server-side technologies.</spam>
+                    </p>
+                    <a href="#">learn mores</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
